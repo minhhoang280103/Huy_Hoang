@@ -13,24 +13,33 @@
     <div class="main">
         <div class="header">
         <ul class="nav">
-            <li><a href="">Home</a></li>
-            <li><a href="">Band</a></li>
-            <li><a href="">Tour</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="">Giày Nam</a></li>
+            <li><a href="">Balo-Túi</a></li>
+            <li><a href="">New & Featured</a></li>
+            <li><a href="">Khuyễn Mãi</a></li>
             <li>
                 <a href="">
-                    More
+                    Phụ Kiện
                     <i class=" nav-arrow-down ti-angle-down"></i>
                 </a>
                 <ul class="subnav">
-                    <li><a href="">Merchandise</a></li>
-                    <li><a href="">Extras</a></li>
-                    <li><a href="">Media</a></li>
+                    <li><a href="">Vớ</a></li>
+                    <li><a href="">Xịt vệ sinh giày</a></li>
+                    <li><a href="">Đế lót</a></li>
                 </ul>
             </li>
         </ul>
         <div class="search-btn">
-            <div class="search-icon ti-search"></div>
+            <div class="search-icon ti-search">
+
+            </div>
+        </div>
+        <input type="text" class="search"  tabindex="0" placeholder="Search">
+        <div class="login">
+            <ul class="nav">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign up</a></li>
+            </ul>
         </div>
     </div>
     <style>
@@ -98,6 +107,13 @@
     .nav .nav-arrow-down{
         font-size: 14px;
     }
+    .header .search{
+        /* display:inline-block; */
+        height:46px;
+        font-size: 17px;
+        float: right;
+        border-radius: 5px;
+    }
     .header .search-btn{
         float: right;
         padding:0 21px;
@@ -111,6 +127,10 @@
         font-size: 20px;
         line-height: 46px;
     
+    }
+    .header .login{
+        float: right;
+        font-size: 17px;
     }
     
     </style>
@@ -127,12 +147,12 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col">
-                    <h4>company</h4>
+                    <h4>Company</h4>
                     <ul>
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">our services</a></li>
-                        <li><a href="#">privacy policy</a></li>
-                        <li><a href="#">filiate program</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Filiate Program</a></li>
                     </ul>
                 </div>
             </div>
@@ -141,37 +161,39 @@
                     <h4>get help</h4>
                     <ul>
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#">shipping</a></li>
-                        <li><a href="#">returns</a></li>
-                        <li><a href="#">prder status</a></li>
-                        <li><a href="#">payment options</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Payment Options</a></li>
                     </ul>
                 </div>
             </div>
             <div class="row">
                 <div class="footer-col">
-                    <h4>online shop</h4>
+                    <h4>Find a Store</h4>
                     <ul>
-                        <li><a href="#">watch</a></li>
-                        <li><a href="#">bag</a></li>
-                        <li><a href="#">shoe</a></li>
-                        <li><a href="#">dress</a></li>
+                        <li><a href="#">421 Bà Hạt,P4,Q10,TP.HCM</a></li>
+                        <li><a href="#">21/5 Trịnh Văn Cấn,Q1,TP.HCM</a></li>
+                        <li><a href="#">Ngã Tư Hàng Xanh</a></li>
+                        <li><a href="#">462/16 Nguyễn Tri Phương,P9,Q10,TPHCM</a></li>
                     </ul>
                 </div>
             </div>
             <div class="row">
                 <div class="footer-col">
                     <h4>follow us</h4>
-                    <ul>
-                        <li><a href="#">coats</a></li>
-                        <li><a href="#">bags</a></li>
-                        <li><a href="#">tables</a></li>
-                        <li><a href="#">lux</a></li>
-                    </ul>
+                    <div class="icon-links">
+                    <a href="https://www.facebook.com/profile.php?id=100040830504302&mibextid=ZbWKwL"><i class="icon ti-facebook"></i></a>
+                    <a href="#"><i class="icon ti-twitter"></i></a>
+                    <a href="#"><i class="icon ti-instagram"></i></a>
+                    <a href="#"><i class="icon ti-youtube"></i>
+                    </div>
                 </div>
-            
+            </div>
+        </div>
+        <p>©HUY HOANG VN - All Rights Reserved. Thiết kế web bởi sờ tiu đần</p>
     </div>
-<style>
+    <style>
     *{
         margin: 0;
         padding: 0;
@@ -182,7 +204,7 @@
     }
     .footer{
         background-color: #000;
-        height:270px;
+        height:350px;
     }
     .container{
         width:100%;
@@ -206,7 +228,7 @@
         color: aqua;
         width:190px;
         text-transform: capitalize;
-        margin-bottom: 30px;
+        margin-bottom: 35px;
         font-weight: 500;
         position:relative;
     }
@@ -230,8 +252,48 @@
         color:#bbbbbb;
         display:block;
         padding: 5px 0;
+        transition: 0.3s;
     }
-    
+    .footer-col ul li a:hover{
+        color: #fff;
+        padding-left: 13px;
+    }
+    .footer-col .icon-links a{
+        display:inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #fff;
+        transition: 0.5s;
+        text-decoration: none;
+        padding: 5px;
+    }
+    .footer-col .icon-links a:hover{
+        color: #24262b;
+        background-color: #fff;
+    }
+
+    p{
+        color: #fff;
+        text-align: center;
+        font-size: 13px;
+    }
+    .footer-col .icon-links a i{
+        font-size: 22px;
+        transition: 0.3s;
+    }
+    .footer-col .icon-links a i:hover{
+        font-size: 26px;
+    }
+    .footer-col h3{
+        
+        margin-left: 60px;
+        
+    }
     </style>
     <!-- </div><div class="header">
         <ul class="nav">
